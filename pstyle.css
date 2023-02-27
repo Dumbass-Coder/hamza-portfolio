@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgba(31, 30, 30, 0.2);
+    width: 20vw;
+    /* height: 48vw; */
+    
+}
+#project{
+    background-color: white;
+color: black;
+
+}
+
+hr {
+    border: 1px dotted rgb(14, 128, 148);
+}
+
+.sidebar li {
+    padding: 12px 12px;
+    list-style: none;
+    margin: 65px 0px;
+    margin-left: 0px;
+}
+
+.sidebar li a {
+    font-weight: bold;
+    background-color: gray;
+    font-size: 20px;
+    padding: 0px 9px;
+        text-decoration: none;
+    color: white;
+    border-radius: 22px;
+}
+
+.sidebar li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    background-color: darkgray;
+    color: rgb(2, 41, 48);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 165vw;
+    /* background-color: rebeccapurple; */
+}
+
+.me p {
+    margin: 10px;
+    padding: 5px;
+}
+
+.hello {
+    font-size: 50px;
+}
+
+.name {
+    font-size: 35px;
+}
+
+.about {
+    font-size: 29px;
+
+}
+
+.moreabout {
+    font-size: 20px;
+
+}
+
+.me {
+    align-items: center;
+    text-align: center;
+}
+
+.btns {
+    margin: 12px 05px;
+}
+
+.btn {
+    background-color: rgb(14, 128, 148);
+    color: white;
+    border: none;
+    border: 1px solid rgb(14, 128, 148);
+    padding: 7px 7px;
+    border-radius: 4px;
+    font-size: 19px;
+    cursor: pointer;
+    margin: 6px 17px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: rgb(14, 128, 148);
+    transform: scale(1.075);
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project a {
+    color: rgb(14, 128, 148);
+    margin: 4px 4px;
+}
+
+.project h1 {
+    margin: 12px 4px;
+    color: rgb(14, 128, 148);
+    /* border-bottom: 1px dotted rgb(14, 128, 148); */
+}
+
+.project p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    margin: 12px 4px;
+    height: 32vh;
+}

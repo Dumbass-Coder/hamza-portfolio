@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        color: silver;
+        font-weight: bold;
+        /* height: 100vh; */
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center
+    }
+
+    .clock {
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        color: #17D4FE;
+        font-size: 70px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 7px;
+        border: 2px solid  #17D4FE;
+        padding: 15px 15px;
+        border-radius: 8px;
+        box-shadow:  3px 3px 20px 20px #17D4FE;
+
+    }
+  
+</style>
+
+<body>
+    <div class="clock" id="clock">
+        
+    </div>
+    
+</body>
+<script>
+    // console.log("HAMZvcvcvcA")
+    function newtime() {
+        let date = new Date();
+        let hh = date.getHours();
+        let mm = date.getMinutes();
+        let ss = date.getSeconds();
+        session = "AM";
+        
+        // console.log(hh)
+        if (hh == 00) {
+            hh = 12
+            date = hh + ":" + mm + ":" + ss + ":"  + session
+            console.log(date)
+            document.getElementById('clock').innerHTML = date;
+
+        }
+       else if (hh == 12) {
+            session = "PM";
+            date = "Time is " +hh + ":" + mm + ":" + ss + ":" + session
+            // console.log(date)
+            document.getElementById('clock').innerHTML = date;
+
+        }
+       else if (hh >= 12) {
+            hh = hh - 12;
+            session = "PM"
+            date = hh + ":" + mm + ":" + ss + ":" + session
+            // console.log(date)
+            document.getElementById('clock').innerHTML = date;
+
+        }
+        else{
+
+            date = hh + ":" + mm + ":" + ss + ":" + session
+            // console.log(date)
+            document.getElementById('clock').innerHTML = date;
+        }
+        setInterval(newtime, 1000);
+    }
+    newtime();
+</script>
+
+</html>

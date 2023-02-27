@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Portfolio</title>
+    <link rel="stylesheet" href="cstyle.css">
+    <link rel="shortcut icon" href="mn.jpg" type="image/x-icon">
+</head>
+<style>
+    @media only screen and (max-width: 500px) {
+        .sidebar {
+            width: 37vw;
+        }
+    }
+
+    /* @media only screen and (max-width: 340px) {
+        .main {
+            height: 100vh;
+        }
+    } */
+
+    @media only screen and (max-width: 355px) {
+        .sidebar {
+            width: 39vw;
+        }
+        .main{
+            width: 75vw;
+        }
+    }
+
+    @media only screen and (max-width: 727px) {
+        .sidebar li a {
+            font-size: 12px;
+        }
+    }
+
+    @media only screen and (max-width: 366px) {
+        .sidebar li a {
+            font-size: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 355px) {
+        label {
+            font-weight: normal;
+            font-size: 18px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a id="index" href="index.html">Home</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" id="contact">Contact Me</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <form action="">
+                <label for="myname">Name:</label><br>
+                <input type="text" id="myname" name="name"><br>
+                <label for="myemail">Email:</label><br>
+                <input type="email" name="email" id="myemail"><br>
+                <label for="coment">Enter Your Message:</label><br>
+                <textarea name="usercoment" id="coment" cols="30" rows="4"></textarea><br>
+                <button>Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            <div class="links">
+                <h3>Links:</h3> <br>
+                <a href="https://www.facebook.com/hamza.younis.31945" target="_blank"><img src="fb icon.png" alt=""></a>
+                <a href="https://www.facebook.com/hamza.younis.31945" target="_blank"><img src="insta icon.jpg"
+                        alt=""></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTMXTkpPjLrLPnSsHqmkDrnmMnzNChLHWQwBjHmGFbSkpFGfLbWVtSLTkLxgvRdQdVkvmL"
+                    target="_blank"><img src="gmail icon.png" alt=""></a>
+
+                <a href="https://github.com/Dumbass-Coder" target="_blank"><img src="github icon.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

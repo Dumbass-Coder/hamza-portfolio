@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgba(31, 30, 30, 0.2);
+    width: 20vw;
+    /* height: 48vw; */
+}
+
+hr {
+    border: 1px dotted rgb(14, 128, 148);
+}
+
+.sidebar li {
+    padding: 12px 12px;
+    list-style: none;
+    margin: 65px 0px;
+    margin-left: 0px;
+}
+
+.sidebar li a {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 9px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    border-radius: 22px;
+}
+
+.sidebar li a:hover {
+
+    color: gray;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    color: rgb(2, 41, 48);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: 100vh;
+}
+
+.me p {
+    margin: 10px;
+    padding: 5px;
+}
+
+.hello {
+    font-size: 50px;
+}
+
+.name {
+    font-size: 35px;
+}
+
+.about {
+    font-size: 29px;
+
+}
+
+.moreabout {
+    font-size: 20px;
+
+}
+
+.me {
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    margin: 12px 05px;
+}
+
+button {
+    background-color: rgb(14, 128, 148);
+    color: white;
+    border: none;
+    border: 1px solid rgb(14, 128, 148);
+    padding: 7px 7px;
+    border-radius: 4px;
+    font-size: 19px;
+    cursor: pointer;
+    margin: 6px 17px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(14, 128, 148);
+    transform: scale(1.055);
+}
+
+img {
+    border-radius: 12vw;
+    height: 18vh;
+}
+
+#contact {
+    background-color: white;
+    color: black;
+}
+
+form {
+    text-align: left;
+    justify-content: space-between;
+}
+
+form {
+    /* border: 2px solid #3333; */
+    box-shadow: 3px 3px 12x 12px black;
+    padding: 3px 3px;
+}
+
+#myname {
+    margin: 4px 4px;
+    padding: 0px 9px;
+    text-decoration: none;
+    color: black;
+    background-color: #3333;
+    border-radius: 22px;
+}
+
+#myemail {
+    margin: 4px 4px;
+    padding: 0px 9px;
+    text-decoration: none;
+    color: black;
+    background-color: #3333;
+    border-radius: 22px;
+}
+
+#coment {
+    margin: 4px 4px;
+    padding: 0px 9px;
+    text-decoration: none;
+    color: black;
+    background-color: #3333;
+    border-radius: 22px;
+}
+
+label {
+    font-weight: bold;
+}
+.links a img{
+    height: 3vw;
+}
